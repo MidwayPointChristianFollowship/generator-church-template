@@ -1,5 +1,5 @@
 # generator-church-template [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Christian Church Template
+> simple church generator
 
 ## Installation
 
@@ -25,13 +25,13 @@ yo church-template
 
 ## License
 
-MIT © [Jerry Chen](jerry153fish.github.io)
+MIT © [Jerry Chen]()
 
 
 [npm-image]: https://badge.fury.io/js/generator-church-template.svg
 [npm-url]: https://npmjs.org/package/generator-church-template
-[travis-image]: https://travis-ci.org/jerry153fish/generator-church-template.svg?branch=master
-[travis-url]: https://travis-ci.org/jerry153fish/generator-church-template
+[travis-image]: https://travis-ci.com/jerry153fish/generator-church-template.svg?branch=master
+[travis-url]: https://travis-ci.com/jerry153fish/generator-church-template
 [daviddm-image]: https://david-dm.org/jerry153fish/generator-church-template.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/jerry153fish/generator-church-template
 [coveralls-image]: https://coveralls.io/repos/jerry153fish/generator-church-template/badge.svg

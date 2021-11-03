@@ -1,11 +1,11 @@
 {
   "name": "generator-church-template",
   "version": "0.0.0",
-  "description": "Christian Church Template",
+  "description": "Christian church generator",
   "homepage": "",
   "author": {
     "name": "Jerry Chen",
-    "email": "Jerry153fish@gmail.com",
+    "email": "jerry153fish@gmail.com",
     "url": "jerry153fish.github.io"
   },
   "files": [
@@ -18,31 +18,27 @@
   ],
   "devDependencies": {
     "yeoman-test": "^1.7.0",
-    "yeoman-assert": "^3.1.0",
-    "coveralls": "^2.13.1",
-    "nsp": "^2.6.3",
-    "eslint": "^4.1.0",
-    "prettier": "^1.7.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.2.1",
-    "eslint-config-prettier": "^2.4.0",
-    "eslint-plugin-prettier": "^2.2.0",
-    "eslint-config-xo": "^0.18.2",
-    "jest": "^22.0.6"
+    "yeoman-assert": "^3.1.1",
+    "coveralls": "^3.0.7",
+    "eslint": "^6.6.0",
+    "prettier": "^1.19.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.3",
+    "eslint-config-prettier": "^6.6.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-config-xo": "^0.27.2",
+    "jest": "^26.1.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "^2.0.1",
+    "yeoman-generator": "^3.1.1",
     "chalk": "^2.1.0",
-    "yosay": "^2.0.1"
+    "yosay": "^2.0.2"
   },
   "jest": {
     "testEnvironment": "node"
-  },
-  "scripts": {
-    "prepublish": "nsp check",
-    "pretest": "eslint .",
-    "precommit": "lint-staged",
-    "test": "jest"
   },
   "lint-staged": {
     "*.js": [
@@ -54,6 +50,11 @@
       "git add"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "xo",
@@ -64,18 +65,17 @@
       "node": true
     },
     "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true,
-          "printWidth": 90
-        }
-      ]
+      "prettier/prettier": "error"
     },
     "plugins": [
       "prettier"
     ]
   },
-  "repository": "jerry153fish/generator-church-template",
+  "scripts": {
+    "format": "eslint . --fix",
+    "pretest": "eslint .",
+    "test": "jest"
+  },
+  "repository": "git@github.com:MidwayPointChristianFollowship/generator-church-template.git",
   "license": "MIT"
 }
